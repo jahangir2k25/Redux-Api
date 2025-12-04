@@ -1,6 +1,6 @@
-import axios from 'axios'
-import React, { useEffect, useState } from 'react'
-import ProductsCard from '../components/ProductsCard'
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+import ProductsCard from '../components/ProductsCard';
 
 const Home = () => {
     const [products, setProducts] = useState([])
@@ -10,7 +10,7 @@ const Home = () => {
             .catch(error => console.log(error.message))
         // .finally(() => console.log('vbgn'))
     }, [])
-    
+
     return (
         <>
             <div className="container">

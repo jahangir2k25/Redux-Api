@@ -59,7 +59,7 @@ const Navbar = () => {
       {
         cartOpen &&
         <div className="w-1/2 fixed top-0 right-0 bg-slate-800 text-slate-100 min-h-screen p-10 overflow-y-auto cursor-pointer">
-          <button onClick={() => setCartOpen(false)}><FaX /></button>
+          <button className="cursor-pointer pb-5 hover:text-red-500" onClick={() => setCartOpen(false)}><FaX /></button>
           <div className="space-y-2 overflow-y-auto">
             {data?.map(product => (
               <div key={product.id} className="bg-slate-700 text-slate-50 flex gap-2 items-center rounded-md p-3 justify-between cursor-pointer">
